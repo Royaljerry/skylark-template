@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Skylark Warning on «DATE»</title>
+	<title>Skylark&nbsp;Warnings&nbsp;on&nbsp;{{sl_date}}</title>
 	<style type="text/css">
 		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 		/* Take care of image borders and formatting */
@@ -112,7 +112,7 @@
 								<table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#123a4d">
 									<tr>
 										<td>
-											<br><br><img src="https://raw.githubusercontent.com/Royaljerry/skylark-template/master/out/img/header.png?raw=true "Skylark"" width="128" height="128" alt="Skylark"><br>
+											<br><br><img src="http://PATH_TO_THE_HEADER_IMAGE/skylark-header.png" onerror="this.style.display='none'" width="128" height="128" alt="Skylark"><br>
 										</td>
 									</tr>
 									<tr>
@@ -126,7 +126,7 @@
 												<table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="60%">
 													<tr>
 														<td style="color:#c7d4da; text-transform: uppercase; font-weight: bold; font-size: 12px;">
-															From day 11/09/2016<br><br><br>
+															From&nbsp;day&nbsp;{{sl_date}}<br><br><br>
 														</td>
 													</tr>
 												</table>
@@ -151,9 +151,9 @@
 													<tr>
 														<td style="color:#123a4d; text-align:center;">
 															<ul style="list-style: none; padding-left: 0; padding-top: 2px; margin-left: 0; font-size: 14px; border-top: 1px #f1f4ed solid;">
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">United States</li>
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">Spain</li>
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">France</li>
+																{% for c in countries %}
+																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">{{c}}</li>
+																{% endfor %}
 															</ul>
 														</td>
 													</tr>
@@ -161,11 +161,11 @@
 														<td>
 															<div>
 																<!--[if mso]>
-																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
+																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://analytics.liligo.com/?tabs=warning&&warningTypes=country" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
 																<w:anchorlock/>
 																<center>
 																<![endif]-->
-																<a href="http://" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
+																<a href="http://analytics.liligo.com/?tabs=warning&&warningTypes=country" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
 																<!--[if mso]>
 																</center>
 																</v:roundrect>
@@ -195,7 +195,9 @@
 													<tr>
 														<td style="color:#123a4d; text-align:center;">
 															<ul style="list-style: none; padding-left: 0; padding-top: 2px; margin-left: 0; font-size: 14px; border-top: 1px #f1f4ed solid;">
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">Whitelabel</li>
+																{% for p in products %}
+																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">{{p}}</li>
+																{% endfor %}
 															</ul>
 														</td>
 													</tr>
@@ -203,11 +205,11 @@
 														<td>
 															<div>
 																<!--[if mso]>
-																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
+																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://analytics.liligo.com/?tabs=warning&&warningTypes=product" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
 																<w:anchorlock/>
 																<center>
 																<![endif]-->
-																<a href="http://" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
+																<a href="http://analytics.liligo.com/?tabs=warning&&warningTypes=product" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
 																<!--[if mso]>
 																</center>
 																</v:roundrect>
@@ -237,8 +239,9 @@
 													<tr>
 														<td style="color:#123a4d; text-align:center;">
 															<ul style="list-style: none; padding-left: 0; padding-top: 2px; margin-left: 0; font-size: 14px; border-top: 1px #f1f4ed solid;">
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">SEM</li>
-																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">SEO</li>
+																{% for l in levergroups %}
+																<li style="line-height: 22px; border-bottom: 1px #f1f4ed solid; margin-bottom: 2px;">{{l}}</li>
+																{% endfor %}
 															</ul>
 														</td>
 													</tr>
@@ -246,11 +249,11 @@
 														<td>
 															<div>
 																<!--[if mso]>
-																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
+																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://analytics.liligo.com/?tabs=warning&&warningTypes=levergroup" style="height:30px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#ff5600">
 																<w:anchorlock/>
 																<center>
 																<![endif]-->
-																<a href="http://" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
+																<a href="http://analytics.liligo.com/?tabs=warning&&warningTypes=levergroup" style="background-color:#ff5600;border-radius:4px;color:#ffffff;display:inline-block;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">More info »</a>
 																<!--[if mso]>
 																</center>
 																</v:roundrect>
@@ -268,12 +271,12 @@
 								<table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="#eff5f6" style="margin: 0 auto">
 									<tr>
 										<td style="color:#698694; font-size:12px;">
-											<br><a href="#">View in browser</a> | <a href="#">Unsubscribe</a> | <a href="#">Contact</a><br>
+											<br><a href="mailto:eszter.somos@odigeo.com">Contact</a><br>
 										</td>
 									</tr>
 									<tr>
 										<td style="color:#698694; font-size:10px;">
-											© 2016 Liligo.com – All Rights Reserved<br><br>
+											©&nbsp;{{sl_year}}&nbsp;Liligo.com&nbsp;–&nbsp;All&nbsp;Rights&nbsp;Reserved<br><br>
 										</td>
 									</tr>
 								</table>
